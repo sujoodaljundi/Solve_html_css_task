@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange">
+    <link rel="icon" href="favicon.png">
+    <title>Orange Academy</title>
+
+
+    <style>
+        form {
+            width: 500px; 
+            padding: 20px;
+            border-radius: 5px;
+            border: 3px solid;
+        }
+
+     
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <b>Gender</b>
+        <input type="radio" name="gender" value="male" id="male"> 
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female"id="female"> 
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="country"><b>Country:</b></label>
+        <select id="country" name="country">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Australia">Australia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="China">China</option>
+            <option value="Russia">Russia</option>
+        </select>
+        <br><br>
+
+        <label for="message"><b>Message:</b></label>
+        <textarea id="message" name="message" ></textarea>
+        <br><br>
+
+        <input type="checkbox" name="subscribe" id="subscribe" value="subscribe">
+        <label for="subscribe">Subscribe?</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange">
+    <link rel="icon" href="favicon.png">
+    <title>Orange Academy</title>
+
+    
+    <style>
+        body {
+    background-color: #605a95;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+.container {
+    background-color: #181634e6;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+
+    
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+textarea {
+    height: 100px;
+    width: 95%;
+}
+
+input[type="submit"] {
+    background-color: #28a746d9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+}
+
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+    </style>
+</head>
+
+
+
+
+
+<body>
+
+    <div class="container">
+
+
+        <h1>Amman Coding Academy Survey Form</h1>
+        <p>Thank you for taking the time to help</p>
+        
+
+
+        <form action="#" method="POST">
+
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+
+            
+            <label for="age">Age (optional)</label>
+            <input type="number" id="age" name="age" placeholder="Age">
+
+
+
+            
+            <label for="survey">How did you like my survey?</label>
+            <select id="survey" name="survey" required>
+
+                <option value="">How did you like my survey</option>
+                <option value="great">Great</option>
+                <option value="good">Good</option>
+                <option value="ok">Okay</option>
+                <option value="bad">Bad</option>
+
+            </select>
+
+
+            
+            <p>Would you recommend my pen to a friend?</p>
+
+            <input type="radio" id="definitely" name="recommend" value="definitely" required>
+            <label for="definitely">Definitely</label><br>
+
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">Maybe</label><br>
+
+            <input type="radio" id="notsure" name="recommend" value="notsure">
+            <label for="notsure">Not sure</label><br><br>
+
+
+
+            
+            <label for="feature">What is your favorite feature of codepen?</label>
+            <select id="feature" name="feature" required>
+
+                <option value="">Select an option</option>
+                <option value="live">Live preview</option>
+                <option value="sharing">Easy sharing</option>
+                <option value="embedding">Embedding features</option>
+
+            </select>
+            
+
+            
+            <p>What would you like to see improved in my survey? (Check all that apply)</p>
+            <input type="checkbox" id="css" name="improve" value="css">
+            <label for="css">CSS needs to be more complex</label><br>
+
+
+            <input type="checkbox" id="javascript" name="improve" value="javascript">
+            <label for="javascript">Use some JavaScript</label><br>
+
+
+            <input type="checkbox" id="nochange" name="improve" value="nochange">
+            <label for="nochange">NO changes required</label>
+
+
+            <br><br>
+            
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
