@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Academy</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange">
+    <style>
+        .container {
+            position: relative;
+            margin-top: 20px;;
+            width: 300px;
+            height: 300px;
+        }
+        .absolute{
+            position: absolute;
+            border-radius: 5px;
+        }
+        .image1 {
+            top: 10px;
+            left: 10px;
+            z-index: 4;
+            width: 600px;
+            height: 400px;
+        }
+        .image2 {
+            top: 60px;
+            left: 60px;
+            z-index: 3;
+            width: 600px;
+            height: 400px;
+        }
+        .image3 {
+            top: 40px;
+            left: 40px;
+            z-index: 2;
+            width: 600px;
+            height: 400px;
+        }
+        .image4 {
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img1.jpg" alt="Image 1" class="absolute image1">
+        <img src="img2.avif" alt="Image 2" class="absolute image2">
+        <img src="img3.jpg" alt="Image 3" class="absolute image3">
+        <img src="img4.jpg" alt="Image 4" class="absolute image4">
+    </div>
+</body>
+</html>
+

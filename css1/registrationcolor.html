@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange">
+    <link rel="icon" href="favicon.png">
+    <title>Orange Academy</title>
+
+
+     
+      <style>
+        table{
+            border: 3px outset black;
+            width:auto;
+            
+        }
+
+        td,th {
+           
+            padding: 10px;   
+            border-collapse: separate;
+            background-color: rgb(0, 151, 251);
+
+        }
+        th{
+            background-color:rgb(246, 234, 99);
+            font-size: 24px;
+            color: red;
+
+        }
+        .button1{
+          width: 150px;
+          height: 40px;
+          background-color: rgb(255, 248, 248);
+          border: outset ;
+          
+
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <table  >
+
+
+      <tr>
+        <th colspan="2">Rigestration Form</th>
+      </tr>
+
+
+
+      <tr>
+        <td><Label for="name">Enter Name</Label></td>
+        <td><input type="text"id="name" name="name"></td>
+      </tr>
+      <tr>
+        <td><Label for="password">Enter Password</Label></td>
+        <td><input type="text"id="password" name="Password"></td>
+      </tr>
+      <tr>
+        <td><Label for="address">Enter address</Label></td>
+        <td><textarea name="address" id="address"></textarea></td>
+      </tr>
+
+
+
+
+      <tr>
+        <td>Select Game</td>
+        <td>
+            <input type="checkbox" name="SelectGame" id="Hockey" value="Hockey">
+            <label for="Hockey">Hockey</label><br>
+        
+            <input type="checkbox" name="SelectGame" id="football" value="footbull">
+            <label for="football">Footbull</label><br>
+        
+            <input type="checkbox" name="SelectGame" id="badminton" value="badminton">
+            <label for="badminton">Badminton</label><br>
+            
+            <input type="checkbox"name="cricket" id="cricket" value="cricket">
+            <label for="cricket">cricket</label><br>
+
+            <input type="checkbox"name="volleyball" id="volleyball" value="volleyball">
+            <label for="volleyball">Volleyball</label><br>
+        
+        </td>
+      </tr>
+
+
+
+
+      <tr>
+        <td>Gender</td>
+        <td>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td><label for="age"></label>Select ur age</td>
+        <td> 
+            <select name="age" id="age">
+            <option value="" disabled selected>Select</option>
+            <option value="less than 18">less than 18</option>
+            <option value="18-24">18 to 24</option>
+            <option value="up to 24">Up to 24</option>
+
+        </select>
+      </td>
+      </tr>
+
+
+
+      <tr>
+        <td> <label for="photo">Select file</label></td>
+        <td><input type="file" name="photo"id="photo"></td>
+      </tr>
+
+
+      <tr>
+        <td colspan="2"> 
+         
+        
+            <button class="button1">Click Me</button>
+            <button class="button1"type="reset" value="reset" name="reset">Reset</button>
+            <button class="button1" type="submit" value="submit">Submit Form</button>
+        
+        
+        
+        </td>
+      </tr>
+</body>
+
+</html>

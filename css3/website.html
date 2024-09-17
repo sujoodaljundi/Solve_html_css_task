@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Academy</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange">
+    <title>Online foodShop</title>
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header {
+        border: 1px solid gray;
+        border-radius: 10px;
+        background-color: rgb(225, 127, 152);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    nav {
+        font-size: 18px;
+        font-family: cursive;
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+        word-spacing: 30px;
+    }
+
+    a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    main {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    #welcome {
+        height: 300px;
+        background-image: url(wallpaper1.avif);
+        text-align: center;
+        color: white;
+        border: 1px solid rgb(225, 127, 152);
+        border-radius: 0% 0% 0% 30%;
+        padding-top: 90px;
+        font-size: 20px;
+    }
+
+    section>h1 {
+        background-color: rgb(101, 92, 96);
+        display: inline;
+    }
+
+
+
+    #menu {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        padding: 20px;
+        
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    button {
+        background-color: rgb(255, 0, 111);
+        color: white;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+     button:hover {
+        background-color: rgb(200, 0, 100);
+    }
+    footer{
+        margin-top: 10px;
+      
+    }
+    footer p{
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo" width="100px" height="80px">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header> 
+
+    <main>
+        <section id="welcome">
+            <h1>Welcome to our Online FoodShop!</h1>
+            <br><br>
+
+            <button>Order Now</button>
+        </section>
+
+        <section id="menu">
+            <div class="card">
+                <img src="card1.jpg" alt="Food Item 1">
+            
+                <button>Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="card2.jpg" alt="Food Item 2">
+            
+                <button>Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="card3.jpg" alt="Food Item 3">
+       
+                <button>Order Now</button>
+            </div>
+        </section>
+     </main>
+     <footer><p>Copyright &copy; 2020-2021 Online FoodShop. All Rights are reserved</p></footer>
+</body>
+</html>
