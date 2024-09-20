@@ -7,7 +7,97 @@
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange">
 
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Times New Roman', serif; 
+            background-color: #eaeaea;
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            background-color: #34495e;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ecf0f1;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+    margin-bottom: 15px;
+    color: #2e4053;
+    font-size: 1.5em;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    line-height: 1.4; 
+    letter-spacing: 0.5px;
+    word-break: break-word;
+    
+}
+
+        .card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .card ul li {
+            margin: 10px 0;
+        }
+
+        .card ul li a {
+            text-decoration: none;
+            color: #2980b9;
+            font-size: 1.1em;
+            transition: color 0.2s ease;
+        }
+
+        .card ul li a:hover {
+            color: #3498db; 
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -164,46 +254,22 @@
                  
                 </ul>
             </div>
-            <div class="card">
-                <h3>CSS (Flex)</h3>
-                <ul>
-                    <li><a href="https://example.com/project51" target="_blank">Exercise 1</a></li>
-                    <li><a href="https://example.com/project52" target="_blank">Exercise 2</a></li>
-                    <li><a href="https://example.com/project53" target="_blank">Exercise 3</a></li>
-                    <li><a href="https://example.com/project54" target="_blank">Exercise 4</a></li>
-                    <li><a href="https://example.com/project55" target="_blank">Exercise 5</a></li>
-                    <li><a href="https://example.com/project56" target="_blank">Exercise 6</a></li>
-                    <li><a href="https://example.com/project57" target="_blank">Exercise 7</a></li>
-                    <li><a href="https://example.com/project58" target="_blank">Exercise 8</a></li>
-                    <li><a href="https://example.com/project59" target="_blank">Exercise 9</a></li>
-                    <li><a href="https://example.com/project60" target="_blank">Exercise 10</a></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>CSS (Grid)</h3>
-                <ul>
-                    <li><a href="https://example.com/project51" target="_blank">Exercise 1</a></li>
-                    <li><a href="https://example.com/project52" target="_blank">Exercise 2</a></li>
-                    <li><a href="https://example.com/project53" target="_blank">Exercise 3</a></li>
-                    <li><a href="https://example.com/project54" target="_blank">Exercise 4</a></li>
-                    <li><a href="https://example.com/project55" target="_blank">Exercise 5</a></li>
-                    <li><a href="https://example.com/project56" target="_blank">Exercise 6</a></li>
-                    <li><a href="https://example.com/project57" target="_blank">Exercise 7</a></li>
-                    <li><a href="https://example.com/project58" target="_blank">Exercise 8</a></li>
-                    <li><a href="https://example.com/project59" target="_blank">Exercise 9</a></li>
-                    <li><a href="https://example.com/project60" target="_blank">Exercise 10</a></li>
-                </ul>
+        
+               
             </div>
             <div class="card">
                 <h3>CSS (Bootstrap, responsive)</h3>
                 <ul>
-                    <li><a href="https://example.com/project51" target="_blank">Exercise 1</a></li>
-                    <li><a href="https://example.com/project52" target="_blank">Exercise 2</a></li>
-                    <li><a href="https://example.com/project53" target="_blank">Exercise 3</a></li>
-                    <li><a href="https://example.com/project54" target="_blank">Exercise 4</a></li>
-                    <li><a href="https://example.com/project55" target="_blank">Exercise 5</a></li>
-                    <li><a href="https://example.com/project56" target="_blank">Exercise 6</a></li>
-                    <li><a href="https://example.com/project57" target="_blank">Exercise 7</a></li>
-                    <li><a href="https://example.com/project58" target="_blank">Exercise 8</a></li>
-                    <li><a href="https://example.com/project59" target="_blank
-            
+                    <li><a href="css7/Bootstrap heading.html" target="_blank">Exercise 1</a></li>
+                    <li><a href="css7/bootstrap button.html" target="_blank">Exercise 2</a></li>
+                    <li><a href="css7/bootstrap img.html" target="_blank">Exercise 3</a></li>
+                    <li><a href="css7/bootstrap nav.html" target="_blank">Exercise 4</a></li>
+                    <li><a href="css7/layaut bootstrap.html" target="_blank">Exercise 5</a></li>
+                    <li><a href="css7/login page.html" target="_blank">Exercise 6</a></li>
+                    <li><a href="css7/side nav_bootsrap.html" target="_blank">Exercise 7</a></li>
+                    <li><a href="css7/webpage.html" target="_blank">Exercise 8</a></li>
+                    <li><a href="css7/webpage1.html" target="_blank">Exercise 9</a></li>
+                    <li><a href="css7/webpage2.html" target="_blank">Exercise 10</a></li>
+
+
+           
