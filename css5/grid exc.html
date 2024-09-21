@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange">
+    <title>Orange Academy</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px; /* Gap between grid items */
+        }
+
+        .grid-container div {
+            background-color: whitesmoke;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 1.5em;
+        }
+
+        .grid-item9 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px; /* Gap between sub-items in grid-item9 */
+        }
+
+        .grid-item6 {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px; /* Gap between sub-items in grid-item6 */
+        }
+
+        .grid-item7 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px; /* Gap between sub-items in grid-item7 */
+        }
+
+        .grid-item9 div, .grid-item6 div, .grid-item7 div {
+            background-color: silver;
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        .grid-item6 div {
+            background-color: gray;
+        }
+
+        .grid-item7 div {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item9">
+            <div>subitem1</div>
+            <div>subitem2</div>
+            <div>subitem3</div>
+            <div>subitem4</div>
+        </div>
+        <div class="grid-item9">
+            <div>subitem1</div>
+            <div>subitem2</div>
+            <div>subitem3</div>
+            <div>subitem4</div>
+        </div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item6">
+            <div>sub1</div>
+            <div>sub2</div>
+        </div>
+        <div class="grid-item7">
+            <div>sub1</div>
+            <div>sub2</div>
+        </div>
+        <div class="grid-item">8</div>
+        <div class="grid-item9">
+            <div>subitem1</div>
+            <div>subitem2</div>
+            <div>subitem3</div>
+            <div>subitem4</div>
+        </div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item9">
+            <div>subitem1</div>
+            <div>subitem2</div>
+            <div>subitem3</div>
+            <div>subitem4</div>
+        </div>
+    </div>
+</body>
+</html>

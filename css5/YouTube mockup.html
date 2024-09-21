@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>YouTube Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu-button {
+            background: none;
+            border: none;
+            color: darkgrey;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 5px;
+            margin-left: 15px;
+            border-radius: 50%;
+        }
+
+        .menu-button:hover {
+            background-color: #eee;
+        }
+
+        .logo {
+            margin-left: 30px;
+        }
+
+        .search-bar {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border-radius: 50px;
+            max-width: calc(100% - 200px);
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            padding: 5px;
+            width: 600px;
+            height: 50px;
+            margin-left: 220px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .search-button {
+            background: none;
+            border: none;
+            color: #333;
+            cursor: pointer;
+            padding: 8px;
+            margin-left: 5px;
+            border-left: 1px solid #4f4f4f;
+            border-radius: 50%;
+        }
+
+        .search-button:hover {
+            background-color: #eee;
+        }
+
+        .voice-button {
+            background: rgba(211, 211, 211, 0.692);
+            border: none;
+            color: rgba(0, 0, 0, 0.68);
+            cursor: pointer;
+            padding: 12px;
+            margin-left: 10px;
+            border-radius: 50%;
+            font-size: 28px;
+        }
+
+        .voice-button:hover {
+            background-color: #ccc;
+        }
+
+        .video-button {
+            background: none;
+            border: none;
+            color: darkgrey;
+            font-size: 30px;
+            cursor: pointer;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+
+        .notifications-button,
+        .profile-button {
+            background: none;
+            border: none;
+            color: darkgrey;
+            font-size: 30px;
+            cursor: pointer;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+
+        .notifications-button:hover,
+        .profile-button:hover {
+            background-color: #eee;
+        }
+
+        .side-nav {
+            width: 200px;
+            height: calc(100vh - 50px);
+            background-color: #ffffff;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            padding-top: 50px;
+            box-shadow: 0px 0 3px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .side-nav a {
+            padding: 10px 20px;
+            display: block;
+            color: darkgrey;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .side-nav a:hover {
+            background-color: #f0f0f0;
+            color: black;
+        }
+
+        main {
+            margin-top: 80px;
+            margin-left: 220px;
+            padding: 20px;
+            margin-right: 150px;
+
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; 
+            margin-top: 20px; }
+
+        .video-card {
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: none; 
+            width: 100%; 
+        }
+
+    
+        .video-card iframe {
+            width: 100%;
+            height: 280px; 
+            border: none; 
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .video-card h4 {
+            margin: 10px 0;
+        }
+
+        .video-card p {
+            color: grey;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <button class="menu-button">☰</button>
+            <div class="logo"><img src="Ytubelogo.png" alt="YouTube logo" width="120px" height="30px"></div>
+            <div class="search-box">
+                <input type="text" placeholder="بحث">
+                <button class="search-button">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="2"/>
+                        <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="voice-button">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+        </div>
+        <button class="notifications-button">
+            <i class="fa-regular fa-bell"></i>
+        </button>
+        <button class="profile-button">
+            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M4 20c0-4 8-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </header>
+
+    <nav class="side-nav">
+        <a href="#">Home</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">Video Library</a>
+        <a href="#">Favorites</a>
+    </nav>
+
+    <main>
+        <section class="video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/video_id_1" allowfullscreen></iframe>
+                <h4>Video Title 1</h4>
+                <p>1M views • 2 days ago</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/video_id_2" allowfullscreen></iframe>
+                <h4>Video Title 2</h4>
+                <p>500K views • 3 days ago</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/video_id_3" allowfullscreen></iframe>
+                <h4>Video Title 3</h4>
+                <p>800K views • 1 day ago</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/video_id_4" allowfullscreen></iframe>
+                <h4>Video Title 4</h4>
+                <p>300K views • 5 days ago</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/video_id_6" allowfullscreen></iframe>
+            <h4>Video Title 6</h4>
+            <p>600K views • 6 days ago</p>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/video_id_4" allowfullscreen></iframe>
+            <h4>Video Title 4</h4>
+            <p>300K views • 5 days ago</p>
+        </div>
+    </section>
+    
+</body>
+</html>
